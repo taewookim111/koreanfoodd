@@ -18,15 +18,18 @@ let len = lis.length;
 let lens = div.length;
 console.log(lens);
 enableClick = true;
-
+let zero = 0;
+let one = 1;
+zerostr = zero.toString();
+onestr = one.toString();
 
 init();
 
 prev.addEventListener("click", (e) => {
     e.preventDefault();
-    if (enableClick) {
-        prevSlide();
-        enableClick = false;
+    if(enableClick) {
+       prevSlide();
+       enableClick = false;
     }
 })
 
@@ -37,6 +40,8 @@ next.addEventListener("click", (e) => {
         enableClick = false;
     }
 })
+
+
 
 for(let el of div){
     posArr.push(el.offsetTop);

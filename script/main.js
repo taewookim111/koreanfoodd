@@ -9,8 +9,7 @@ const boxes = tapmenu.querySelectorAll("section article");
 const aside = document.querySelector(".aside");
 const openTag = document.querySelector("#box a");
 const closeTag = aside.querySelector("i");
-let btnCall = document.querySelector(".btnCall");
-let menuMo = document.querySelector(".menuMo");
+
 
 let pages = document.querySelector("body").children;
 console.log(pages);
@@ -21,12 +20,6 @@ posArr = [];
 const lastText = tapmenu.querySelector("h1"); 
 let title1 = tapmenu.querySelector(".title1");
 let title2 = tapmenu.querySelector(".title2");
-
-btnCall.addEventListener("click",(e) => {
-    e.preventDefault();
-    btnCall.classList.toggle("on");
-    menuMo.classList.toggle("on");
-})
 
 
 btnMetro.forEach((el, index)=>{
@@ -65,7 +58,6 @@ function setPosition(){
         posArr.push(el.offsetTop);
     }
 }
-console.log(posArr); 
 
 window.addEventListener("scroll", ()=>{
     let scroll = window.scrollY || window.pageYOffset

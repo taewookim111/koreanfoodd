@@ -222,7 +222,7 @@ header .inner .menuMo.on {
   padding: 0 5px;
   float: left;
 }
-#slider .panel li ::after {
+#slider .panel li::after {
   content: "";
   display: block;
   clear: both;
@@ -283,6 +283,88 @@ header .inner .menuMo.on {
   background-color: #fff;
 }
 
+@media screen and (max-width: 1179px) {
+  #slider {
+    margin: 500px auto 150px;
+  }
+  #slider .title {
+    position: relative;
+    font: bold 50px "arial";
+    color: #999;
+  }
+  #slider .panel {
+    width: 300%;
+    height: 100%;
+    transition: 0.6s;
+    position: relative;
+  }
+  #slider .panel li {
+    width: 33.3333333333%;
+    height: 100%;
+    padding: 0 5px;
+    float: left;
+  }
+  #slider .panel li::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+  #slider .panel li video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+  }
+  #slider .panel li h2 {
+    position: absolute;
+    font: bold 250px/1 "Noto Serif KR";
+    color: mintcream;
+    top: 0px;
+    margin-left: 25%;
+  }
+  #slider .panel li p {
+    position: absolute;
+    font: bold 100px/1 "Noto Serif KR";
+    color: mintcream;
+    bottom: 120px;
+    margin-left: 24%;
+  }
+  #slider .panel li:nth-of-type(2) h2 {
+    margin-left: 12%;
+    color: yellow;
+  }
+  #slider .panel li:nth-of-type(2) p {
+    margin-left: 15%;
+    color: yellow;
+  }
+  #slider .panel li:nth-of-type(3) h2 {
+    margin-left: 4%;
+    color: pink;
+  }
+  #slider .panel li:nth-of-type(3) p {
+    margin-left: 6%;
+    color: pink;
+  }
+  #slider .btns {
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+  }
+  #slider .btns li {
+    float: left;
+    margin-right: 10px;
+  }
+  #slider .btns li a {
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-color: #999;
+    border-radius: 50%;
+  }
+  #slider .btns li.on a {
+    background-color: #fff;
+  }
+}
 #box {
   width: 1180px;
   height: 400px;
@@ -331,6 +413,11 @@ header .inner .menuMo.on {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  filter: brightness(1);
+  transition: 0.5s;
+}
+#box .inner .pic:hover img {
+  filter: brightness(1.1);
 }
 #box .inner .pic2 {
   width: 200px;
@@ -347,6 +434,11 @@ header .inner .menuMo.on {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  filter: brightness(1);
+  transition: 0.5s;
+}
+#box .inner .pic2:hover img {
+  filter: brightness(1.2);
 }
 #box a {
   position: relative;
@@ -818,6 +910,7 @@ figure .inner a:hover {
   width: 280px;
   float: left;
   margin-right: 20px;
+  transition: 0.5s;
 }
 #news .inner .wrap article:last-child {
   margin-right: 0px;
@@ -828,15 +921,29 @@ figure .inner a:hover {
   margin-bottom: 20px;
   overflow: hidden;
   border-radius: 10px;
+  transition: 0.5s;
 }
 #news .inner .wrap article .pic:hover img {
-  transform: scale(1.2);
+  opacity: 0;
+}
+#news .inner .wrap article .pic:hover .pic2 {
+  z-index: 1;
+  opacity: 1;
 }
 #news .inner .wrap article .pic img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: all 0.5s;
+  transition: 0.5s;
+  opacity: 1;
+}
+#news .inner .wrap article .pic .pic2 {
+  position: relative;
+  top: -144px;
+  border-radius: 10px;
+  z-index: -1;
+  transition: 0.5s;
+  opacity: 0;
 }
 #news .inner .wrap article h2 {
   margin-bottom: 10px;
@@ -847,6 +954,31 @@ figure .inner a:hover {
   color: #111;
 }
 
+@media screen and (max-width: 1179px) {
+  #news .inner {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+  }
+  #news .inner h1 {
+    font: bold 44px/1 "arial";
+    color: #333;
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 70px;
+  }
+  #news .inner .wrap {
+    width: 100%;
+  }
+  #news .inner .wrap article {
+    width: 45%;
+    margin-right: 1%;
+    margin-bottom: 10px;
+  }
+  #news .inner .wrap article:last-child {
+    margin-right: 0;
+  }
+}
 #tapmenu {
   width: 100%;
   height: 60vh;
@@ -859,7 +991,7 @@ figure .inner a:hover {
 }
 #tapmenu .title1 {
   position: relative;
-  font: bold 80px/1 "arial";
+  font: bold 50px/1 "arial";
   color: brown;
   top: -140px;
   left: -340px;
@@ -976,15 +1108,15 @@ figure .inner a:hover {
 }
 #tapmenu .title2 {
   position: relative;
-  font: bold 80px/1 "arial";
+  font: bold 50px/1 "arial";
   color: brown;
   top: 80px;
   right: -360px;
 }
 #tapmenu h1 {
   position: absolute;
-  bottom: -170px;
-  font: bold 100px/1 "arial";
+  bottom: -180px;
+  font: bold 80px/1 "arial";
   background: url(../img/한지.jpg) no-repeat center/cover;
   color: burlywood;
   padding: 20px;

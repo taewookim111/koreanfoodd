@@ -43,6 +43,13 @@
                 width: 100%;
                 height: 100%;
                 object-fit: cover;
+                filter: brightness(1);
+                transition: 0.5s;
+            }
+            &:hover{
+                img{
+                    filter: brightness(1.1);
+                }
             }
         }
         .pic2{
@@ -59,6 +66,13 @@
                 width: 100%;
                 height: 100%;
                 object-fit: cover;
+                filter: brightness(1);
+                transition: 0.5s;
+            }
+            &:hover{
+                img{
+                    filter: brightness(1.2);
+                }
             }
         }
     }
