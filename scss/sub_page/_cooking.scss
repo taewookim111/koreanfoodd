@@ -1,0 +1,372 @@
+#cooking{
+    width: 100%;
+    .eating{
+        width: 100%;
+        height: 100vh;
+        object-fit: cover;
+        position: fixed;
+        z-index: -2;
+        opacity: 0.5;
+        top: 0;
+    }
+    h1{
+        margin: 70px auto 120px;
+        font: bold 75px/1 "궁서";
+        color: #888;
+        text-align: center;
+    }
+    .spoon{
+        i{
+            position: absolute;
+            top: 150px;
+            left: 20px;
+            z-index: -1;
+            opacity: 0.6;
+            color: #888;
+            font-size: 500px;
+            transform-origin: bottom;
+            transition: 0.8s;
+        }
+    }
+    .bowl{
+        i{
+            position: absolute;
+            left: 740px;
+            top: 70px;
+            z-index: -1;
+            opacity: 0.6;
+            color: wheat;
+            font-size: 400px;
+            transition: 0.7s;
+        }
+    }
+    .cook{
+        text-align: center;
+        width: 1180px;
+        margin: 0 auto 50px;
+        font: normal 18px/1.8 "Noto Serif KR";
+        color: whitesmoke;
+        background-color: rgba(0,0,0,0.4);
+        padding: 20px;
+        opacity: 0.8;
+    }
+    .forknife{
+        i{
+            position: absolute;
+            top: 150px;
+            right: -20px;
+            z-index: -1;
+            opacity: 0.6;
+            color: #888;
+            font-size: 500px;
+            transform: rotate(-45deg);
+            transform-origin: bottom center;
+            transition: 0.8s;
+        }
+    }
+    .boil{
+        width: 100%;
+        margin: 50px 0 250px;
+        .des{
+            width: 1180px;
+            margin: 0 auto;
+            h2{
+                margin: 170px auto 70px;
+                font: bold 50px/1 "Noto Serif KR";
+                color: #888;
+                text-align: center;
+            }
+        }
+        .pork{
+            i{
+                position: absolute;
+                top: 1000px;
+                left: 100px;
+                font-size: 150px;
+                color: pink;
+                z-index: -1;
+                opacity: 0.8;
+                transition: 3s;
+            }
+        }
+        .temp{
+            i{
+                position: absolute;
+                top: 1300px;
+                left: 100px;
+                font-size: 150px;
+                color: red;
+                opacity: 0.5;
+                z-index: 1;
+                transform: scale(0);
+                transition: 0.4s;
+            }
+        }
+        .water{
+            i{
+                position: absolute;
+                top: 1300px;
+                right: 100px;
+                font-size: 150px;
+                color: blue;
+                opacity: 0.5;
+                z-index: -1;
+                transition: 2s;
+            }
+        }
+    }
+    .barbeque{
+        width: 100%;
+        margin: 50px 0 250px;
+        .des{
+            width: 1180px;
+            margin: 0 auto;
+            h2{
+                margin: 170px auto 70px;
+                font: bold 50px/1 "Noto Serif KR";
+                color: #888;
+                text-align: center;
+            }
+        }
+        .pork2{
+            i{
+                position: absolute;
+                top: 1700px;
+                left: 100px;
+                font-size: 150px;
+                color: pink;
+                z-index: -1;
+                opacity: 0.8;
+                transition: 3s;
+            }
+        }
+        .burn{
+            i{
+                position: absolute;
+                top: 2000px;
+                left: 50px;
+                font-size: 150px;
+                color: red;
+                opacity: 0.5;
+                z-index: 1;
+                transform: scale(0);
+                transition: 0.4s;
+            }
+        }
+        .fire{
+            i{
+                position: absolute;
+                top: 2000px;
+                right: 100px;
+                font-size: 150px;
+                color: red;
+                opacity: 0.5;
+                z-index: -1;
+                transition: 2s;
+            }
+        }
+    }
+    .pickling{
+        width: 100%;
+        margin: 50px 0 250px;
+        .des{
+            width: 1180px;
+            margin: 0 auto;
+            h2{
+                margin: 170px auto 70px;
+                font: bold 50px/1 "Noto Serif KR";
+                color: #888;
+                text-align: center;
+            }
+        }
+        .crab{
+            img{
+                position: absolute;
+                top: 2450px;
+                left: 80px;
+                width: 150px;
+                height: 150px;
+                object-fit: cover;
+                z-index: -1;
+                opacity: 0.8;
+                transition: 2.5s;
+            }
+        }
+        .soysauce{
+            i{
+                position: absolute;
+                top: 2750px;
+                left: 100px;
+                font-size: 150px;
+                color: brown;
+                opacity: 0.5;
+                z-index: 1;
+                transform: scale(0);
+                transition: 0.4s;
+            }
+        }
+        .sea{
+            i{
+                position: absolute;
+                top: 2750px;
+                right: 60px;
+                font-size: 150px;
+                color: lightblue;
+                opacity: 0.5;
+                z-index: -1;
+                transition: 2s;
+            }
+        }
+    }
+    .braised{
+        width: 100%;
+        margin: 50px 0 250px;
+        .des{
+            width: 1180px;
+            margin: 0 auto;
+            h2{
+                margin: 170px auto 70px;
+                font: bold 50px/1 "Noto Serif KR";
+                color: #888;
+                text-align: center;
+            }
+        }
+        .beef{
+            i{
+                position: absolute;
+                top: 3250px;
+                left: 80px;
+                font-size: 150px;
+                color: brown;
+                z-index: -1;
+                opacity: 0.8;
+                transition: 3s;
+            }
+        }
+        .soysauce2{
+            i{
+                position: absolute;
+                top: 3550px;
+                left: 100px;
+                font-size: 150px;
+                color: brown;
+                opacity: 0.5;
+                z-index: 1;
+                transform: scale(0);
+                transition: 0.4s;
+            }
+        }
+        .egg{
+            i{
+                position: absolute;
+                top: 3550px;
+                right: 100px;
+                font-size: 150px;
+                color: burlywood;
+                opacity: 0.5;
+                z-index: -1;
+                transition: 2s;
+            }
+        }
+    }
+    .fried{
+        width: 100%;
+        margin: 50px 0 250px;
+        .des{
+            width: 1180px;
+            margin: 0 auto;
+            h2{
+                margin: 170px auto 70px;
+                font: bold 50px/1 "Noto Serif KR";
+                color: #888;
+                text-align: center;
+            }
+        }
+        .fish{
+            i{
+                position: absolute;
+                top: 4050px;
+                left: 80px;
+                font-size: 150px;
+                color: lightcyan;
+                z-index: -1;
+                opacity: 0.8;
+                transition: 3s;
+            }
+        }
+        .oil{
+            i{
+                position: absolute;
+                top: 4350px;
+                left: 100px;
+                font-size: 150px;
+                color: yellow;
+                z-index: 1;
+                transform: scale(0);
+                transition: 0.4s;
+            }
+        }
+        .sea2{
+            i{
+                position: absolute;
+                top: 4350px;
+                right: 60px;
+                font-size: 150px;
+                color: lightblue;
+                opacity: 0.5;
+                z-index: -1;
+                transition: 2s;
+            }
+        }
+    }
+    .fermented{
+        width: 100%;
+        margin: 50px 0 250px;
+        .des{
+            width: 1180px;
+            margin: 0 auto;
+            h2{
+                margin: 170px auto 70px;
+                font: bold 50px/1 "Noto Serif KR";
+                color: #888;
+                text-align: center;
+            }
+        }
+        .shrimp{
+            i{
+                position: absolute;
+                top: 4850px;
+                left: 80px;
+                font-size: 150px;
+                color: pink;
+                z-index: -1;
+                opacity: 0.8;
+                transition: 2.6s;
+            }
+        }
+        .time{
+            i{
+                position: absolute;
+                top: 5200px;
+                left: 100px;
+                font-size: 150px;
+                color: #999;
+                z-index: 1;
+                transform: scale(0);
+                transition: 0.4s;
+            }
+        }
+        .sea3{
+            i{
+                position: absolute;
+                top: 5150px;
+                right: 60px;
+                font-size: 150px;
+                color: lightblue;
+                opacity: 0.5;
+                z-index: -1;
+                transition: 2s;
+            }
+        }
+    }
+}
